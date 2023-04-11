@@ -19,20 +19,19 @@
         <div class="grid-item"><h1>Player 1</h1></div>
         <div class="grid-item"></div>
         <div class="grid-item"><h1>Com</h1></div>
-        <div class="grid-item">4<img src="./assets/rock.png" alt="" /></div>
+        <div id="bg-rock" class="grid-item"><img id="rock" src="./assets/rock.png" onclick="selectRock()" /></div>
+        <div class="grid-item-middle"><img class="img-result" src="./assets/VS.png" /></div>
+        <div id="bg-rock-comp" class="grid-item"><img src="./assets/rock.png" /></div>
+        <div id="bg-paper" class="grid-item"><img id="paper" src="./assets/paper.png" onclick="selectPaper()" /></div>
+        <div id="bg-paper-comp" class="grid-item"><img src="./assets/paper.png" /></div>
+        <div id="bg-scissors" class="grid-item"><img id="scissors" src="./assets/scissors.png" onclick="selectScissors()" /></div>
+        <div id="bg-scissors-comp" class="grid-item"><img src="./assets/scissors.png" /></div>
         <div class="grid-item"></div>
-        <div class="grid-item">6<img src="./assets/rock.png" alt="" /></div>
-        <div class="grid-item">7<img src="./assets/paper.png" alt="" /></div>
-        <div class="grid-item">8<img src="./assets/VS.png" alt="" /></div>
-        <div class="grid-item">9<img src="./assets/paper.png" alt="" /></div>
-        <div class="grid-item">10<img src="./assets/scissors.png" alt="" /></div>
-        <div class="grid-item"></div>
-        <div class="grid-item">12<img src="./assets/scissors.png" alt="" /></div>
-        <div class="grid-item"></div>
-        <div class="grid-item">14<img src="./assets/refresh.png" alt="" /></div>
+        <div class="grid-item"><img onclick="window.location.reload()" src="./assets/refresh.png" /></div>
         <div class="grid-item"></div>
       </div>
       <div class="scores"></div>
     </div>
+    <script src="./script.js"></script>
   </body>
 </html>

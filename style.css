@@ -22,10 +22,10 @@ nav {
 }
 
 nav span {
-  width: 20px;
-  height: 20px;
-  border-left: 8px solid #ffc107;
-  border-bottom: 8px solid #ffc107;
+  width: 10px;
+  height: 10px;
+  border-left: 5px solid #ffc107;
+  border-bottom: 5px solid #ffc107;
   transform: rotate(45deg);
 }
 
@@ -45,7 +45,7 @@ nav img {
 
 nav h1 {
   color: #ffc107;
-  font-size: 32px;
+  font-size: 28px;
   letter-spacing: 2px;
   /* border: 1px solid red; */
   margin-left: 10px;
@@ -65,7 +65,19 @@ nav h1 {
   margin: auto;
   width: 100px;
   height: 100px;
-  /* background-color: #ffc107; */
+  /* border: 1px solid red; */
+}
+
+.game .grid-item-middle {
+  grid-area: 2 / 2 / span 3 / span 1;
+  display: flex;
+  margin: auto;
+}
+
+.game .grid-item:nth-child(1),
+.game .grid-item:nth-child(3) {
+  width: 200px;
+  height: 100px;
 }
 
 .game .grid-item img {
@@ -78,16 +90,15 @@ nav h1 {
   letter-spacing: 2px;
 }
 
+.game .grid-item-middle img {
+  width: 150px;
+}
+
 .game .grid-item:nth-child(14) img {
   width: 50px;
 }
 
-.game .grid-item:nth-child(4):hover,
-.game .grid-item:nth-child(6):hover,
-.game .grid-item:nth-child(7):hover,
-.game .grid-item:nth-child(9):hover,
-.game .grid-item:nth-child(10):hover,
-.game .grid-item:nth-child(12):hover {
+.select-item-game {
   width: 100px;
   height: 100px;
   background-color: #8d8b8b;
