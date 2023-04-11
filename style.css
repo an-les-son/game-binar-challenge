@@ -12,12 +12,13 @@ body {
   font-family: "Bebas Neue", cursive;
 }
 
+/* navbar */
 nav {
   display: flex;
   align-items: center;
   /* border: 1px solid red; */
   /* justify-content: flex-start; */
-  margin-top: -50px;
+  margin-top: -30px;
 }
 
 nav span {
@@ -44,9 +45,51 @@ nav img {
 
 nav h1 {
   color: #ffc107;
-  font-size: 42px;
+  font-size: 32px;
   letter-spacing: 2px;
   /* border: 1px solid red; */
   margin-left: 10px;
-  display: inline;
+}
+
+/* game */
+.game {
+  display: grid;
+  grid-template-columns: 200px 200px 200px;
+  grid-template-rows: 100px 100px 100px 100px;
+  justify-content: center;
+  grid-gap: 10px;
+}
+
+.game .grid-item {
+  display: flex;
+  margin: auto;
+  width: 100px;
+  height: 100px;
+  /* background-color: #ffc107; */
+}
+
+.game .grid-item img {
+  width: 60px;
+  margin: auto;
+}
+
+.game .grid-item h1 {
+  margin: auto;
+  letter-spacing: 2px;
+}
+
+.game .grid-item:nth-child(14) img {
+  width: 50px;
+}
+
+.game .grid-item:nth-child(4):hover,
+.game .grid-item:nth-child(6):hover,
+.game .grid-item:nth-child(7):hover,
+.game .grid-item:nth-child(9):hover,
+.game .grid-item:nth-child(10):hover,
+.game .grid-item:nth-child(12):hover {
+  width: 100px;
+  height: 100px;
+  background-color: #8d8b8b;
+  border-radius: 20px;
 }
